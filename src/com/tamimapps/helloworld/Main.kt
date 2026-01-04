@@ -95,4 +95,34 @@ fun main() {
 
     cusDatas.forEachIndexed { index, cusData -> println("$index is ${cusData}") }
 
+//    break / continue / return
+
+    val testDatas: Array<Any> = arrayOf("test1", "test2", "test3", "test4", "test5")
+
+//    break
+    run mytestdata@{
+        testDatas.forEach {
+            if (it == "test3") {
+                return@mytestdata
+            }
+            println(it)
+        }
+    }
+
+    val testDatas2 = arrayOf("t1", "t2", "t3", "t4", "t5")
+//continue with two for each
+    testDatas2.forEach myloop@{ outer ->
+
+        testDatas2.forEach { inner ->
+            if (outer == "t3") {
+                return@myloop
+            }
+        }
+//        if (it == "t3") {
+//            return@forEach   // continue
+//        }
+        println(outer)
+    }
+
+
 }
