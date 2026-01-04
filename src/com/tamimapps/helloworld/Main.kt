@@ -1,5 +1,7 @@
 package com.tamimapps.helloworld
 
+import kotlin.math.max
+import kotlin.math.sqrt
 import kotlin.reflect.typeOf
 
 
@@ -124,5 +126,40 @@ fun main() {
         println(outer)
     }
 
+//    function
 
+    var result25: Double = 3.56
+    var result24: Double = 3.34
+    var finalvalue: Double? = null
+    if (result24 != result25) {
+        var x: Double = (result24 + result25) / 2
+
+        finalvalue = sqrt(x)
+    }
+
+    println("square value of final value : $finalvalue")
+
+
+    fun add(a: Int, b: Int): Int {
+        return a + b
+    }
+
+    fun stringAdd(a: String, b: String): String {
+        return "${a} ${b}"
+    }
+
+    val sumValue = add(2, 3)
+    val sumValue2 = add(1, 2)
+
+    println("first name :")
+    var fn: String = readLine() ?: ""
+
+    println("last name :")
+    var ln: String = readLine() ?: ""
+
+    var StrinAdd = stringAdd(fn, ln)
+
+    println(sumValue)
+    println(sumValue2)
+    println(StrinAdd)
 }
