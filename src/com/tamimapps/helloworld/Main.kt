@@ -60,6 +60,15 @@ fun main() {
         else -> println("$myData is not found")
 
     }
+//range
+    var number: Int = 40
+
+    when (number) {
+        in 1..5 -> println("range is low")
+        in 6..10 -> println("range is high")
+        else -> println("found $number in the range")
+
+    }
 
 
 }
