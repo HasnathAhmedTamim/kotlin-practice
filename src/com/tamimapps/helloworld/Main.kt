@@ -82,5 +82,12 @@ fun main() {
     }
     println(storeLang)
 
+//    for in loop
+    val countryList: Array<String> = arrayOf("Ban", "Eng", "Jap")
+
+    for (i in countryList.indices) {
+        println("$i country is ${countryList[i]}")
+    }
+
 
 }
