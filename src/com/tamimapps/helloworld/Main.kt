@@ -51,15 +51,15 @@ fun main() {
 
 //    when
 
-    var myData : Int = 101
+    var myData: Int = 391
 
     when (myData) {
-        100 ->println("This is 100")
-        101-> println("$myData is found")
+//        multi branch
+        100, 202 -> println("This is 100")
+        101, 391 -> println("$myData is found")
         else -> println("$myData is not found")
 
     }
-
 
 
 }
