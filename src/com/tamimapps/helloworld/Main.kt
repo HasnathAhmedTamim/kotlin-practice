@@ -70,5 +70,17 @@ fun main() {
 
     }
 
+//    statement / expression
+    var lang: String = "Kotlin"
+
+    val storeLang: String = when (lang) {
+        "Kotlin" -> "Kotlin"
+        "Java" -> "Java"
+        else -> {
+            "wrong"
+        }
+    }
+    println(storeLang)
+
 
 }
