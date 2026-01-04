@@ -171,6 +171,9 @@ fun main() {
     println(myrecSum)
 }
 
+//OutSIde MAIN
+
+
 //recursive  ---- Exception in thread "main" java.lang.StackOverflowError
 //use : tailrec 'tailrec' marks a function as tail-recursive   (allowing the compiler to replace recursion with iteration
 tailrec fun recSum(i: Long, j: Long = 0): Long {
@@ -180,3 +183,4 @@ tailrec fun recSum(i: Long, j: Long = 0): Long {
         recSum(i - 1, j + i)  // recursive call: decrease i, add to sum
     }
 }
+
