@@ -27,14 +27,16 @@ fun main() {
     val a = 103
     val b = 1012
 
-    val c: Int = if (a < b) {
-        val sum = a + b
-        sum
-    } else {
-        0   // must return an Int
-    }
-
-    println(c)
+//    condition
+//
+//    val c: Int = if (a < b) {
+//        val sum = a + b
+//        sum
+//    } else {
+//        0   // must return an Int
+//    }
+//
+//    println(c)
 
 
 //    println(a == b)
@@ -45,4 +47,19 @@ fun main() {
 //    println("My username is $price")
 
 //   println("Hello World! This is my value that is :  ${args[0]} and second is ${args[1]}")
+
+
+//    when
+
+    var myData : Int = 101
+
+    when (myData) {
+        100 ->println("This is 100")
+        101-> println("$myData is found")
+        else -> println("$myData is not found")
+
+    }
+
+
+
 }
