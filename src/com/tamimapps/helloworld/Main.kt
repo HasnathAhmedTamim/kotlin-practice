@@ -151,15 +151,32 @@ fun main() {
     val sumValue = add(2, 3)
     val sumValue2 = add(1, 2)
 
-    println("first name :")
-    var fn: String = readLine() ?: ""
+//    println("first name :")
+//    var fn: String = readLine() ?: ""
+//
+//    println("last name :")
+//    var ln: String = readLine() ?: ""
+//
+//    var StrinAdd = stringAdd(fn, ln)
+//
+//    println(sumValue)
+//    println(sumValue2)
+//    println(StrinAdd)
 
-    println("last name :")
-    var ln: String = readLine() ?: ""
 
-    var StrinAdd = stringAdd(fn, ln)
+//    tailrec recursion
 
-    println(sumValue)
-    println(sumValue2)
-    println(StrinAdd)
+
+    val myrecSum = recSum(5000000)
+    println(myrecSum)
+}
+
+//recursive  ---- Exception in thread "main" java.lang.StackOverflowError
+//use : tailrec 'tailrec' marks a function as tail-recursive   (allowing the compiler to replace recursion with iteration
+tailrec fun recSum(i: Long, j: Long = 0): Long {
+    return if (i < 1) {
+        j  // base case: return accumulated sum
+    } else {
+        recSum(i - 1, j + i)  // recursive call: decrease i, add to sum
+    }
 }
