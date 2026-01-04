@@ -89,5 +89,10 @@ fun main() {
         println("$i country is ${countryList[i]}")
     }
 
+//    for each loop
+
+    val cusDatas: Array<Any> = arrayOf("c1", "c2", "c3")
+
+    cusDatas.forEachIndexed { index, cusData -> println("$index is ${cusData}") }
 
 }
